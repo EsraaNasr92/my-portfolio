@@ -1,0 +1,259 @@
+@media (max-width: 1024px) {
+    .banner {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .banner-text, .banner-img {
+        width: 100%;
+    }
+
+    .current-status {
+        position: static;
+        margin: 20px auto 0 auto;
+        width: fit-content;
+        justify-content: center;
+    }
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project-cards {
+        width: 45%;
+    }
+
+    .title {
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .title-text {
+        flex-wrap: wrap;
+    }
+
+    .title-line {
+        max-width: 100%;
+    }
+    .skills-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .skills-section_img img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .skills-section_cards {
+        justify-content: center;
+    }
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .about-text button {
+        margin: 20px auto 0;
+        display: block;
+    }
+
+    .about-img img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .about-section::before,
+    .about-section::after {
+        display: none; /* Hide decorative backgrounds on small screens */
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-text {
+        width: 100%;
+    }
+
+    .contact-info {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .contact-info h3 {
+        font-size: 15px;
+    }
+
+    .contact .title-text h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .banner p {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 16px 0;
+    }
+
+    .primary {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .current-status {
+        margin: -5px auto;
+    }
+
+    .line {
+        display: none;
+    }
+    .cards {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .project-cards {
+        width: 100%;
+    }
+
+    .title-text h1 {
+        font-size: 24px;
+    }
+
+    .project-description h1 {
+        font-size: 20px;
+    }
+
+    .project-description p {
+        padding: 16px 0;
+        font-size: 14px;
+    }
+
+    .project-language {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .skills-section_cards {
+        gap: 16px;
+    }
+
+    .skills-section_cards_boxs {
+        min-width: 100%;
+    }
+
+    .skills-section_cards_boxs h1.title {
+        font-size: 14px;
+        padding: 0.4rem 0.5rem;
+    }
+
+    .skills-section_cards .tools p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icons{
+        display: none;
+    }
+    .banner h1 {
+        font-size: 32px;
+        line-height: 50px;
+        width: 80%;
+    }
+
+    .primary {
+        width: 100%;
+    }
+
+    .banner-img img {
+        max-width: 100%;
+        height: auto;
+    }
+    .title-text h1 {
+        font-size: 20px;
+    }
+
+    .quote{
+        margin: 90px auto 0;
+    }
+    .project-cards img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-btns {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .title-link {
+        align-self: flex-start;
+    }
+
+    .title-link a {
+        font-size: 14px;
+    }
+
+    .project-language a {
+        font-size: 12px;
+    }
+    .skills-section_cards_boxs {
+        min-width: 100%;
+    }
+
+    .skills-section_img img {
+        display: none;
+    }
+
+    .skills .title-text h1 {
+        font-size: 20px;
+    }
+
+    .skills-section_cards .tools p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .about-text p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .about .title-text h1 {
+        font-size: 20px;
+    }
+    .contact-info h3 {
+        font-size: 14px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+    }
+
+    .contact-text p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+}
