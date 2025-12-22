@@ -12,7 +12,7 @@
     padding: 0;
     margin: 0;
 }
-
+/* General Style */
 html, body {
     overflow-x: hidden;
 }
@@ -23,7 +23,7 @@ body{
     width: 100%;
 }
 
-button{
+button, a.primary{
     background: none;
     cursor: pointer;
     color: var(--white);
@@ -50,6 +50,10 @@ button{
     background: rgb(171, 178, 191, 0.2);
 }
 
+a{
+    text-decoration: none;
+}
+/* Header style */
 .logo{
     position: relative;
     z-index: 1101;
@@ -96,6 +100,14 @@ nav ul li a:hover{
 nav ul li a span{
     color: var(--primary-color);
     padding-right: 1px;
+}
+
+.logo a{
+    color: var(--white);
+}
+
+.logo a:hover{
+    color: var(--primary-color);
 }
 
 .input-wrapper{
@@ -309,64 +321,6 @@ nav ul li a span{
     color: var(--white);
 }
 
-/*  Quote section */
-.quote::after{
-    content: " ";
-    background: url('/images/Rectangle-bg.svg') no-repeat;
-    background-position: right center;
-    background-size: contain;
-    position: absolute;
-    top: 0;
-    right: -558px;
-    width: 300px;
-    height: 100%;
-    z-index: 1;
-}
-.quote{
-    margin: 180px auto 0;
-    max-width: 737px;
-    width: 100%;
-    border: 1px solid var(--gray);
-    padding: 32px;
-    color: var(--white);
-    font-size: 24px;
-    font-weight: 500;
-    position: relative;
-}
-
-.quote-author{
-    border: 1px solid var(--gray);
-    border-top: none;
-    padding: 16px;
-    color: var(--white);
-    font-size: 24px;
-    max-width: 165px;
-    width: 100%;
-    position: absolute;
-    right: 30%;
-}
-
-.top-quote{
-    background: url('/images/quote.svg') no-repeat;
-    background-color: var(--background);
-    width: 26px;
-    height: 21px;
-    position: absolute;
-    top: -9%;
-    padding: 0 15px;
-}
-
-.bottom-quote{
-    background: url('/images/quote.svg') no-repeat;
-    background-color: var(--background);
-    width: 26px;
-    height: 21px;
-    position: absolute;
-    bottom: -9%;
-    right: 3%;
-    padding: 0 15px;
-}
-
 /* projects section */
 .projects{
     margin: 137px auto;
@@ -578,7 +532,7 @@ nav ul li a span{
 }
 
 .about-text{
-    width: 500px;
+    width: 680px;
     max-width: 100%;
 }
 
@@ -631,6 +585,10 @@ nav ul li a span{
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+.contact-info a{
+    color: var(--gray);
 }
 
 /* Footer */
