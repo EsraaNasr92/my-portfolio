@@ -322,12 +322,12 @@ nav ul li a span{
 }
 
 /* projects section */
-.projects{
+.projects {
     margin: 137px auto;
     position: relative;
 }
 
-.projects::after{
+.projects::after {
     content: " ";
     background: url('/images/rect-bg.svg') no-repeat;
     background-position: right center;
@@ -340,7 +340,7 @@ nav ul li a span{
     z-index: 1;
 }
 
-.projects::before{
+.projects::before {
     content: " ";
     background: url('/images/dots-bg.svg') no-repeat;
     background-position: right center;
@@ -353,26 +353,25 @@ nav ul li a span{
     z-index: 1;
 }
 
-.title{
+.title {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.title-text{
+.title-text {
     display: flex;
     align-items: center;
     gap: 16px;
     flex: 1;
 }
 
-.title-text h1{
+.title-text h1 {
     font-size: 32px;
     color: var(--white);
     font-weight: 500;
-    white-space: nowrap;
     margin: 0;
+    white-space: nowrap;
 }
 
 .title-line {
@@ -382,59 +381,142 @@ nav ul li a span{
     background-color: var(--primary-color);
 }
 
-.title-text h1 span{
+.title-text h1 span {
     color: var(--primary-color);
 }
 
-.title-link a{
+.title-link a {
     color: var(--white);
     text-decoration: none;
     font-weight: 500;
 }
 
-.title-link a:hover{
+.title-link a:hover {
     color: var(--gray);
 }
 
-.cards{
+.project-filters {
     display: flex;
-    align-items: center;
-    align-content: center;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.project-filters button {
+    background: transparent;
+    border: 1px solid var(--gray);
+    color: var(--white);
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.project-filters button.active,
+.project-filters button:hover {
+    background: var(--primary-color);
+    color: #000;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 20px;
 }
 
-.project-cards{
+.project-cards {
+    flex: 0 0 calc(33.333% - 13.33px); /* 3 cards per row with gap  always same size */
+    box-sizing: border-box;
     margin-top: 60px;
     border: 1px solid var(--gray);
+    transition: transform 0.3s, border-color 0.3s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
-.project-language{
+.project-cards:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary-color);
+}
+
+.project-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 4px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.project-badge.real {
+    background: #22c55e;
+    color: #000;
+}
+
+.project-badge.side {
+    background: #6366f1;
+    color: #fff;
+}
+
+.project-img {
+    overflow: hidden;
+}
+
+.project-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.project-cards:hover img {
+    transform: scale(1.05);
+}
+
+.project-language {
     border-bottom: 1px solid var(--gray);
     padding: 8px;
 }
-.project-language a{
+
+.project-language a {
     color: var(--gray);
     text-decoration: none;
     line-height: 32px;
+    margin-right: 8px;
 }
 
-.project-language a:hover{
+.project-language a:hover {
     color: var(--white);
 }
 
-.project-description{
+.project-description {
     padding: 18px;
 }
 
-.project-description h1{
+.project-description h1 {
     color: var(--white);
     font-size: 24px;
     font-weight: 500;
 }
 
-.project-description p{
+.project-description p {
     color: var(--gray);
     padding: 25px 0;
+}
+
+/* Responsive: 2 per row on tablet */
+@media (max-width: 992px) {
+    .project-cards {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+/* Responsive: 1 per row on mobile */
+@media (max-width: 600px) {
+    .project-cards {
+        flex: 0 0 100%;
+    }
 }
 
 /* Skills section */
