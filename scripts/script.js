@@ -12,6 +12,11 @@ burger.addEventListener('click', () => {
 const filterButtons = document.querySelectorAll('.project-filters button');
 const projectCards = document.querySelectorAll('.project-cards');
 
+// Initially show only 3 projects
+projectCards.forEach((card, index) => {
+    card.style.display = index < 3 ? 'flex' : 'none';
+});
+
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
         // Active button
@@ -22,7 +27,33 @@ filterButtons.forEach(button => {
 
         projectCards.forEach(card => {
             const type = card.dataset.type;
-            card.style.display = (filter === 'all' || filter === type) ? 'flex' : 'none';
+
+            if (filter === 'all') {
+                // Show only first 3 projects on "All"
+                card.style.display = [...projectCards].indexOf(card) < 3 ? 'flex' : 'none';
+            } else {
+                // Show all projects matching the filter
+                card.style.display = (type === filter) ? 'flex' : 'none';
+            }
         });
     });
 });
+
+// For current projects I'm working on
+const slides = document.querySelectorAll('.status-slide');
+let currentIndex = 0;
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+    });
+}
+
+// Initial slide
+showSlide(currentIndex);
+
+// Change slide every 3 seconds
+setInterval(() => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+}, 3000);

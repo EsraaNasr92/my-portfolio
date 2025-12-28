@@ -303,22 +303,40 @@ nav ul li a span{
     margin-right: 10px;
 }
 
-.current-status{
-    border: 1px solid var(--gray);
-    padding: 8px;
-    color: var(--gray);
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: -9%;
-    width: 23%;
-    margin-bottom: 1px;
-    width: 31%;
+.current-status-slider span{
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
-.current-status span{
-    color: var(--white);
+.current-status-slider {
+    position: relative;
+    width: 100%;
+    max-width: 434px;
+    overflow: hidden;
+    border: 1px solid var(--gray);
+    margin-top: -6px;
+}
+
+.status-slide {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    min-height: 50px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.status-slide.active {
+    opacity: 1;
+    position: relative;
+}
+.status-slide .text{
+    color: var(--gray);
 }
 
 /* projects section */

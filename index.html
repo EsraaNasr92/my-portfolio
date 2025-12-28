@@ -10,6 +10,11 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
     </style>
+    <!-- Add Font Awesome CDN in your <head> -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body>
@@ -51,171 +56,247 @@
                 <p>React • JavaScript • UI/UX • Responsive Design <br />
                     I turn complex ideas into smooth user experiences.</p>
                 <a class="primary" href="#contact">Hire me</a>
+                <a class="primary" href="files/Esraa Nasr Elsayed - Frontend Developer- Resume.pdf" download>
+                    Download CV
+                    <i class="fas fa-download"></i>
+                </a>
             </div>
             <div class="banner-img">
                 <img src="images/banner-img.svg" alt="Banner Image">
-                <div class="current-status">
-                    <div class="rectangle"></div>
-                    <div class="text">Building something exciting <span>Noted</span></div>
+                <div class="current-status-slider">
+                    <div class="status-slide">
+                        <div class="rectangle"></div>
+                        <div class="text">Building something exciting <span>Noted</span></div>
+                    </div>
+                    <div class="status-slide">
+                        <div class="rectangle"></div>
+                        <div class="text">Learning <span>MERN stack</span> to craft dynamic apps</div>
+                    </div>
+                    <div class="status-slide">
+                        <div class="rectangle"></div>
+                        <div class="text">Coding my <span>portfolio</span> with clean UI/UX</div>
+                    </div>
                 </div>
             </div>
         </div>
+
         <!-- Start project section -->
-<div class="projects" id="work">
-    <!-- Title -->
-    <div class="title">
-        <div class="title-text">
-            <h1><span>#</span>projects</h1>
-            <div class="title-line"></div>
-        </div>
-        <div class="title-link">
-            <a href="#">View all ~~></a>
-        </div>
-    </div>
-
-    <!-- Filters -->
-    <div class="project-filters">
-        <button class="active" data-filter="all">All</button>
-        <button data-filter="real">Real Projects</button>
-        <button data-filter="side">Side Projects</button>
-    </div>
-
-    <!-- Project Cards -->
-    <div class="cards">
-        <!-- Side Project -->
-        <div class="project-cards" data-type="side">
-            <span class="project-badge side">Side Project</span>
-            <div class="project-img">
-                <img src="images/project-img.jpg" alt="Thanksgiving project">
-            </div>
-            <div class="project-language">
-                <a href="#">React</a>
-                <a href="#">UI/UX</a>
-                <a href="#">Tailwind CSS</a>
-            </div>
-            <div class="project-description">
-                <h1 class="title">Thanksgiving</h1>
-                <p class="description">Minimal Thanksgiving-themed web page featuring a wheat motif with clean, responsive design.</p>
-                <div class="project-btns">
-                    <a class="primary" href="https://thanksgiving-wheat.vercel.app/" target="_blank">Live <~></a>
+        <div class="projects" id="work">
+            <!-- Title -->
+            <div class="title">
+                <div class="title-text">
+                    <h1><span>#</span>projects</h1>
+                    <div class="title-line"></div>
                 </div>
+<!--                 <div class="title-link">
+                    <a href="#">View all ~~></a>
+                </div> -->
             </div>
-        </div>
 
-        <!-- Real Project -->
-        <div class="project-cards" data-type="real">
-            <span class="project-badge real">Real Project</span>
-            <div class="project-img">
-                <img src="images/project-img.jpg" alt="Noted project">
+            <!-- Filters -->
+            <div class="project-filters">
+                <button class="active" data-filter="all">All</button>
+                <button data-filter="real">Real Projects</button>
+                <button data-filter="side">Side Projects</button>
             </div>
-            <div class="project-language">
-                <a href="#">React</a>
-                <a href="#">React Router</a>
-                <a href="#">Tailwind CSS</a>
-                <a href="#">NodeJS</a>
-                <a href="#">Express</a>
-                <a href="#">MongoDB</a>
-            </div>
-            <div class="project-description">
-                <h1 class="title">Noted</h1>
-                <p class="description">A responsive note‑taking web app with intuitive UI for creating, editing, and managing notes</p>
-                <div class="project-btns">
-                    <a class="primary" href="https://noted-eight.vercel.app/" target="_blank">Live <~></a>
+
+            <!-- Project Cards -->
+            <div class="cards">
+                <!-- Real Project -->
+                <div class="project-cards" data-type="real">
+                    <span class="project-badge real">Real Project</span>
+                    <div class="project-img">
+                        <img src="images/jeddahAgency.png" alt="Jeddah Agency project">
+                    </div>
+                    <div class="project-language">
+                        <a href="#">WordPress</a>
+                        <a href="#">Theme customization</a>
+                        <a href="#">Plugin integration</a>
+                    </div>
+                    <div class="project-description">
+                        <h1 class="title">Jeddah Gate Agency</h1>
+                        <p class="description">WordPress-based home cleaning services website with a clean, responsive design and intuitive UI/UX.</p>
+                        <div class="project-btns">
+                            <a class="primary" href="https://jeddahgateagency.com/" target="_blank">Live <~></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Side Project -->
-        <div class="project-cards" data-type="side">
-            <span class="project-badge side">Side Project</span>
-            <div class="project-img">
-                <img src="images/project-img.jpg" alt="Signing project">
-            </div>
-            <div class="project-language">
-                <a href="#">React</a>
-                <a href="#">Node.JS</a>
-                <a href="#">Express.js</a>
-                <a href="#">MongoDB</a>
-                <a href="#">Tailwind CSS</a>
-            </div>
-            <div class="project-description">
-                <h1 class="title">Signing</h1>
-                <p class="description">Secure login and signup web app with user authentication and session management.</p>
-                <div class="project-btns">
-                    <a class="primary" href="https://mern-login-signup-delta.vercel.app/" target="_blank">Live <~></a>
+                <!-- Real Project -->
+                <div class="project-cards" data-type="real">
+                    <span class="project-badge real">Real Project</span>
+                    <div class="project-img">
+                        <img src="images/mediasea.png" alt="MediaSea project">
+                    </div>
+                    <div class="project-language">
+                        <a href="#">React</a>
+                        <a href="#">React Router</a>
+                        <a href="#">Tailwind CSS</a>
+                        <a href="#">NodeJS</a>
+                        <a href="#">Express</a>
+                        <a href="#">MongoDB</a>
+                    </div>
+                    <div class="project-description">
+                        <h1 class="title">Mediasea</h1>
+                        <p class="description">Learning project built with React.js focusing on responsive UI, component-based design, and modern frontend practices.</p>
+                        <div class="project-btns">
+                            <a class="primary" href="https://mediasea.net/" target="_blank">Live <~></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-            <!-- End project section -->
-            <!-- Start skills section -->
-    <div class="skills">
-        <div class="title">
-            <div class="title-text">
-                <h1><span>#</span>skills</h1>
-                <div class="title-line"></div>
-            </div>
-        </div>
-        <div class="skills-section">
-            <div class="skills-section_img">
-                <img src="images/skills-img.svg" alt="skills image">
-            </div>
-            <div class="skills-section_cards">
-                <!-- Languages -->
-                <div class="skills-section_cards_boxs">
-                    <h1 class="title">Languages</h1>
-                    <div class="tools">
-                        <p>JavaScript</p>
-                        <p>Python</p>
+                <!-- Side Project -->
+                <div class="project-cards" data-type="side">
+                    <span class="project-badge side">Side Project</span>
+                    <div class="project-img">
+                        <img src="images/thanksgiving.png" alt="Thanksgiving project">
+                    </div>
+                    <div class="project-language">
+                        <a href="#">React</a>
+                        <a href="#">UI/UX</a>
+                        <a href="#">Tailwind CSS</a>
+                    </div>
+                    <div class="project-description">
+                        <h1 class="title">Thanksgiving</h1>
+                        <p class="description">Minimal Thanksgiving-themed web page featuring a wheat motif with clean, responsive design.</p>
+                        <div class="project-btns">
+                            <a class="primary" href="https://thanksgiving-wheat.vercel.app/" target="_blank">Demo <~></a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Databases -->
-                <div class="skills-section_cards_boxs">
-                    <h1 class="title">Databases</h1>
-                    <div class="tools">
-                        <p>MongoDB</p>
-                        <p>PostgreSQL</p>
-                        <p>MySQL</p>
+                <!-- Real Project -->
+                <div class="project-cards" data-type="side">
+                    <span class="project-badge side">Side Project</span>
+                    <div class="project-img">
+                        <img src="images/noted.png" alt="Noted project">
+                    </div>
+                    <div class="project-language">
+                        <a href="#">React</a>
+                        <a href="#">React Router</a>
+                        <a href="#">Tailwind CSS</a>
+                        <a href="#">NodeJS</a>
+                        <a href="#">Express</a>
+                        <a href="#">MongoDB</a>
+                    </div>
+                    <div class="project-description">
+                        <h1 class="title">Noted</h1>
+                        <p class="description">A responsive note‑taking web app with intuitive UI for creating, editing, and managing notes</p>
+                        <div class="project-btns">
+                            <a class="primary" href="https://noted-eight.vercel.app/" target="_blank">Live <~></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Real Project -->
+                <div class="project-cards" data-type="real">
+                    <span class="project-badge real">Real Project</span>
+                    <div class="project-img">
+                        <img src="images/american.png" alt="Noted project">
+                    </div>
+                    <div class="project-language">
+                        <a href="#">WordPress</a>
+                        <a href="#">Theme customization</a>
+                        <a href="#">Woocommerce</a>
+                        <a href="#">NodeJS</a>
+                        <a href="#">Express</a>
+                        <a href="#">MongoDB</a>
+                    </div>
+                    <div class="project-description">
+                        <h1 class="title">American Council EG</h1>
+                        <p class="description">Responsive WordPress website for online courses with custom theme, WooCommerce, and integrated online payments.</p>
+                        <div class="project-btns">
+                            <a class="primary" href="https://americancouncileg.com/" target="_blank">Live <~></a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Tools -->
-                <div class="skills-section_cards_boxs">
-                    <h1 class="title">Tools</h1>
-                    <div class="tools">
-                        <p>Git</p>
-                        <p>Linux</p>
-                        <p>Font Awesome</p>
+                <!-- Side Project -->
+                <div class="project-cards" data-type="side">
+                    <span class="project-badge side">Side Project</span>
+                    <div class="project-img">
+                        <img src="images/signing.png" alt="Signing project">
                     </div>
-                </div>
-
-                <!-- Frameworks & Libraries -->
-                <div class="skills-section_cards_boxs">
-                    <h1 class="title">Frameworks & Libraries</h1>
-                    <div class="tools">
-                        <p>React</p>
-                        <p>Bootstrap</p>
-                        <p>Tailwind CSS</p>
-                        <p>Express</p>
+                    <div class="project-language">
+                        <a href="#">React</a>
+                        <a href="#">Node.JS</a>
+                        <a href="#">Express.js</a>
+                        <a href="#">MongoDB</a>
+                        <a href="#">Tailwind CSS</a>
                     </div>
-                </div>
-
-                <!-- Other -->
-                <div class="skills-section_cards_boxs">
-                    <h1 class="title">Other</h1>
-                    <div class="tools">
-                        <p>HTML</p>
-                        <p>CSS / SCSS</p>
-                        <p>EJS</p>
-                        <p>REST API</p>
+                    <div class="project-description">
+                        <h1 class="title">Signing</h1>
+                        <p class="description">Secure login and signup web app with user authentication and session management.</p>
+                        <div class="project-btns">
+                            <a class="primary" href="https://mern-login-signup-delta.vercel.app/" target="_blank">Demo <~></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- End project section -->
+        
+        <!-- Start skills section -->
+        <div class="skills">
+            <div class="title">
+                <div class="title-text">
+                    <h1><span>#</span>skills</h1>
+                    <div class="title-line"></div>
+                </div>
+            </div>
+            <div class="skills-section">
+                <div class="skills-section_img">
+                    <img src="images/skills-img.svg" alt="skills image">
+                </div>
+                <div class="skills-section_cards">
+                    <!-- Languages -->
+                    <div class="skills-section_cards_boxs">
+                        <h1 class="title">Languages</h1>
+                        <div class="tools">
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skills-section_cards_boxs">
+                        <h1 class="title">Databases</h1>
+                        <div class="tools">
+                            <p>MongoDB</p>
+                            <p>MySQL</p>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skills-section_cards_boxs">
+                        <h1 class="title">Tools</h1>
+                        <div class="tools">
+                            <p>Git/GitHub</p>
+                            <p>Linux</p>
+                            <p>Font Awesome</p>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks & Libraries -->
+                    <div class="skills-section_cards_boxs">
+                        <h1 class="title">Frameworks & Libraries</h1>
+                        <div class="tools">
+                            <p>React</p>
+                            <p>Bootstrap</p>
+                            <p>Tailwind CSS</p>
+                            <p>Express</p>
+                        </div>
+                    </div>
+
+                    <!-- Other -->
+                    <div class="skills-section_cards_boxs">
+                        <h1 class="title">Other</h1>
+                        <div class="tools">
+                            <p>HTML</p>
+                            <p>CSS / SCSS</p>
+                            <p>EJS</p>
+                            <p>REST API</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- End skills section -->
         <!-- Start About section-->
