@@ -1,12 +1,34 @@
 const burger = document.querySelector('.burger');
 const menu = document.querySelector('.menu');
+const menuLinks = document.querySelectorAll('.menu a');
 
+// Toggle menu on burger click
 burger.addEventListener('click', () => {
     menu.classList.toggle('active');
     burger.classList.toggle('active');
 
     const expanded = burger.getAttribute('aria-expanded') === 'true';
     burger.setAttribute('aria-expanded', !expanded);
+});
+
+// Close menu on link click with fade out and scroll
+menuLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent default jump
+
+        const targetId = link.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        // Fade out menu
+        menu.classList.remove('active');
+        burger.classList.remove('active');
+        burger.setAttribute('aria-expanded', false);
+
+        // Wait for the fade-out transition to finish before scrolling
+        setTimeout(() => {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
 });
 
 const filterButtons = document.querySelectorAll('.project-filters button');
