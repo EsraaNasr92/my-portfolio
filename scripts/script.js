@@ -1,3 +1,4 @@
+// fixed(menu) Responsive menu fro mobile version
 const burger = document.querySelector('.burger');
 const menu = document.querySelector('.menu');
 const menuLinks = document.querySelectorAll('.menu a');
